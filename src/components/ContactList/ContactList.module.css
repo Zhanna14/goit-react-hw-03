@@ -1,70 +1,14 @@
-/* ContactList.module.css */
-.list {
-  list-style: none;
-  padding: 0;
-}
-
-.listItem {
+.contactsBox {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: #f9f9f9;
-}
-
-.listItem p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.deleteButton {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #dc3545;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.deleteButton:hover {
-  background-color: #c82333;
-}
-/* ContactList.module.css */
-.list {
-  list-style: none;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
   padding: 0;
-}
-
-.listItem {
-  display: flex;
-  align-items: center;
+  list-style: none;
   justify-content: space-between;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: #f9f9f9;
 }
 
-.listItem p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.deleteButton {
-  padding: 5px 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #dc3545;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.deleteButton:hover {
-  background-color: #c82333;
+.contactsList {
+  flex: 0 0 calc(25% - 20px); 
+  box-sizing: border-box;
 }

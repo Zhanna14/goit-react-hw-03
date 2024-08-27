@@ -1,12 +1,25 @@
-/* SearchBox.module.css */
 .searchBox {
-  margin-bottom: 20px;
+  width: 400px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.input {
+.title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.searchName {
+
+  width: 350px;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  width: 100%;
 }

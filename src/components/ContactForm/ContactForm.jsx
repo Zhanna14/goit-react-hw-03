@@ -44,18 +44,28 @@ const ContactForm = ({ onAddContact }) => {
     >
       {({ errors }) => (
         <Form className={css.form}>
-          <label>
-            <span>Name</span>
-            <Field type="text" name="userName" required />
+          <label className={css.file}>
+            <span className={css.name}>Name</span>
+            <Field
+              type="text"
+              name="userName"
+              required
+              className={css.userName}
+            />
             <ErrorMessage
               className={css.errorText}
               name="userName"
               component="span"
             />
           </label>
-          <label>
-            <span>Number</span>
-            <Field type="tel" name="telNumber" required />
+          <label className={css.file}>
+            <span className={css.number}>Number</span>
+            <Field
+              type="tel"
+              name="telNumber"
+              required
+              className={css.userNumber}
+            />
 
             <ErrorMessage
               className={css.errorText}
@@ -64,7 +74,11 @@ const ContactForm = ({ onAddContact }) => {
             />
           </label>
 
-          <button disabled={Object.keys(errors).length > 0} type="submit">
+          <button
+            disabled={Object.keys(errors).length > 0}
+            type="submit"
+            className={css.submitBtn}
+          >
             Add contact
           </button>
         </Form>

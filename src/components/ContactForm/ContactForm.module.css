@@ -1,19 +1,39 @@
-/* ContactForm.module.css */
 .form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.input {
+.file {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.name, .number {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.userName, .userNumber {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
 }
 
-button {
-  align-self: flex-start;
+.errorText {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #d9534f;
+}
+
+.submitBtn {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -21,8 +41,10 @@ button {
   color: white;
   cursor: pointer;
   font-size: 16px;
+  width: 100%;
 }
 
-button:hover {
-  background-color: #218838;
+.submitBtn:disabled {
+  background-color: #c3e6cb;
+  cursor: not-allowed;
 }
